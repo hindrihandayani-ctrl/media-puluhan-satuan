@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Media pembelajaran interaktif Matematika kelas 1 MI: nilai tempat puluhan dan satuan.">
+<title>Petualangan Angka - Puluhan dan Satuan</title>
+<style>
+:root{--teal:#0d9488;--navy:#075985;--ink:#17324d;--muted:#64748b;--line:#dbe5ee;--paper:#fff;--soft:#f0fdfa;--yellow:#fef3c7}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f1f5f9;color:var(--ink);line-height:1.5}
+.wrap{max-width:900px;margin:auto;padding:18px}.hero{background:linear-gradient(125deg,var(--navy),var(--teal));color:white;border-radius:22px;padding:28px;box-shadow:0 8px 24px #0f172a18}
+.kicker{font-size:.78rem;font-weight:800;letter-spacing:.12em}.hero h1{font-size:clamp(1.8rem,5vw,2.8rem);margin:8px 0 0}.hero h2{margin:0;font-size:1.35rem}.hero p{margin:12px 0}.teacher{border-top:1px solid #ffffff55;padding-top:12px;margin-top:18px;font-size:.95rem}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}button,select{font:inherit}.tab,.btn,.btn2{border:0;border-radius:12px;padding:11px 15px;font-weight:700;cursor:pointer}.tab{background:white;border:1px solid var(--line);color:var(--ink);font-size:.9rem}.tab.active,.btn{background:var(--teal);color:white}.btn{width:100%;margin-top:12px}.btn2{background:white;border:1px solid var(--line);color:var(--ink);width:100%;margin-top:10px}.tab:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #f59e0b;outline-offset:2px}
+.panel{background:white;border:1px solid var(--line);border-radius:17px;padding:19px;margin:12px 0;box-shadow:0 3px 12px #0f172a08}.center{text-align:center}.muted{color:var(--muted);font-size:.92rem}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.tile{padding:14px;border-radius:14px;background:#f0fdfa;text-align:center}.tile.yellow{background:var(--yellow)}.big{font-size:2.5rem;font-weight:900;line-height:1.2}.iconrow{font-size:2rem;margin:12px 0}.hidden{display:none!important}.answer{display:block;width:100%;text-align:left;background:white;border:1px solid var(--line);border-radius:12px;padding:12px;margin:8px 0;cursor:pointer}.answer.correct{background:#dcfce7;border-color:#16a34a;color:#166534}.answer.wrong{background:#fee2e2;border-color:#dc2626;color:#991b1b}.feedback{background:#f1f5f9;border-radius:12px;padding:12px;margin-top:12px;font-size:.94rem}.sticks{display:flex;justify-content:center;flex-wrap:wrap;gap:4px;margin:12px}.stick{width:9px;height:44px;background:var(--teal);border-radius:5px}.unit{display:inline-block;width:18px;height:18px;background:#f59e0b;border-radius:4px;margin:3px}.numgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.numgrid>div{padding:16px;border-radius:14px;text-align:center}.tens{background:#ccfbf1;color:#115e59}.ones{background:#fef3c7;color:#92400e}select{width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;background:white;margin-top:6px}.progress{height:9px;background:#e2e8f0;border-radius:20px;overflow:hidden;margin:9px 0}.bar{height:100%;background:var(--teal);width:20%;transition:width .2s}.question{font-weight:800;font-size:1.12rem;margin:20px 0 12px}.evalq{background:#f8fafc;border-radius:12px;padding:14px;margin:12px 0}.evalq label{display:block;margin:8px 0;font-size:.95rem}footer{text-align:center;color:var(--muted);font-size:.82rem;padding:22px 0}
+@media(max-width:560px){.wrap{padding:12px}.hero{padding:21px}.grid{gap:8px}.panel{padding:15px}.tab{flex:1 1 28%;padding:10px 6px}.numgrid{gap:8px}}
+@media print{body{background:white}.wrap{max-width:none}.hero{print-color-adjust:exact;-webkit-print-color-adjust:exact}nav,.btn,.btn2{display:none!important}.panel{break-inside:avoid;box-shadow:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+ <div class="kicker">MEDIA PEMBELAJARAN MATEMATIKA • KELAS 1 MI</div>
+ <h1>🌟 PETUALANGAN ANGKA</h1><h2>Puluhan dan Satuan</h2>
+ <p>Belajar berhitung menjadi mudah, menyenangkan, dan penuh petualangan!</p>
+ <div class="teacher">Guru: <strong>Hindri Handayani, S.Pd.</strong></div>
+</header>
+<nav aria-label="Menu pembelajaran">
+ <button class="tab active" data-page="home">🏠 Beranda</button>
+ <button class="tab" data-page="materi">📖 Materi</button>
+ <button class="tab" data-page="game">🎮 Permainan</button>
+ <button class="tab" data-page="kuis">❓ Kuis</button>
+ <button class="tab" data-page="evaluasi">📝 Evaluasi</button>
+</nav>
+<main>
+<section id="page-home">
+ <div class="panel center">
+  <div class="iconrow">🔢 🧮 🎒</div><h2>Halo, Anak Hebat!</h2>
+  <p>Ayo belajar mengenal nilai tempat puluhan dan satuan. Kita akan bermain sambil belajar!</p>
+  <div class="grid">
+   <div class="tile">🎯<br><b>Mengenal angka</b></div><div class="tile">🧩<br><b>Bermain angka</b></div>
+   <div class="tile">⭐<br><b>Menjawab kuis</b></div><div class="tile">🏆<br><b>Evaluasi belajar</b></div>
+  </div><button class="btn" data-go="materi">Mulai Petualangan →</button>
+ </div>
+ <div class="panel"><h3>🎯 Tujuan Pembelajaran</h3><p>Setelah mengikuti pembelajaran, siswa diharapkan mampu:</p>
+  <ol><li>Mengenali nilai tempat puluhan dan satuan.</li><li>Menentukan banyak puluhan dan satuan suatu bilangan.</li><li>Menguraikan bilangan menjadi puluhan dan satuan.</li><li>Menyelesaikan soal sederhana tentang nilai tempat.</li></ol>
+ </div>
+ <div class="panel"><b>💡 Petunjuk:</b> Tekan menu Materi, Permainan, Kuis, dan Evaluasi secara berurutan. Bacalah petunjuk sebelum mengerjakan setiap kegiatan.</div>
+</section>
+<section id="page-materi" class="hidden">
+ <div class="panel"><span class="muted"><b>MATERI 1</b></span><h2>Apa itu Puluhan dan Satuan?</h2><p>Setiap bilangan dua angka mempunyai nilai tempat. Angka di sebelah kiri menunjukkan puluhan, sedangkan angka di sebelah kanan menunjukkan satuan.</p></div>
+ <div class="panel"><h3>🟦 Puluhan</h3><p>10 satuan dapat dikelompokkan menjadi 1 puluhan.</p>
+  <div class="sticks" aria-label="Sepuluh stik satuan"><span class="stick"></span><span class="stick"></span><span class="stick"></span><span class="stick"></span><span class="stick"></span><span class="stick"></span><span class="stick"></span><span class="stick"></span><span class="stick"></span><span class="stick"></span></div>
+  <p class="center"><b>10 satuan = 1 puluhan</b></p>
+ </div>
+ <div class="panel"><h3>🟨 Satuan</h3><p>Satuan adalah bagian bilangan yang menunjukkan jumlah satu-satu.</p><div class="center"><span class="unit"></span><span class="unit"></span><span class="unit"></span><p><b>3 satuan = 3</b></p></div></div>
+ <div class="panel"><span class="muted"><b>MATERI 2 • CONTOH</b></span><h2>Mari Mengenal Bilangan 23</h2>
+  <div class="numgrid"><div class="tens"><div class="big">2</div><b>Puluhan</b><p>20</p><div class="iconrow">▥ ▥</div></div><div class="ones"><div class="big">3</div><b>Satuan</b><p>3</p><div class="iconrow">🟨🟨🟨</div></div></div>
+  <div class="center"><div class="big">20 + 3 = 23</div><p>Dua puluhan dan tiga satuan sama dengan 23.</p></div>
+ </div>
+ <div class="panel"><h3>📚 Contoh lainnya</h3>
+  <p><b>12</b> = 1 puluhan + 2 satuan</p><p><b>15</b> = 1 puluhan + 5 satuan</p><p><b>23</b> = 2 puluhan + 3 satuan</p><p><b>34</b> = 3 puluhan + 4 satuan</p>
+ </div><button class="btn" data-go="game">Lanjut ke Permainan →</button>
+</section>
+<section id="page-game" class="hidden">
+ <div class="panel"><span class="muted"><b>🎮 PERMAINAN 1</b></span><h2>Detektif Angka</h2><p>Amati bilangan berikut. Tentukan jumlah puluhan dan satuannya!</p>
+  <div class="center"><div id="game-number" class="big">24</div><p class="muted">Bilangan yang harus kamu uraikan</p></div>
+  <div class="grid"><label><b>Jumlah puluhan</b><select id="game-tens"><option value="">Pilih</option><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
+  <label><b>Jumlah satuan</b><select id="game-ones"><option value="">Pilih</option><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option></select></label></div>
+  <button class="btn" id="check-game">Periksa Jawaban</button><div id="game-feedback" class="feedback hidden" aria-live="polite"></div><button class="btn2" id="next-game">Angka Berikutnya ↻</button>
+ </div>
+ <div class="panel"><span class="muted"><b>🎮 PERMAINAN 2</b></span><h3>Susun Bilangannya!</h3><p>Pilih bilangan yang terdiri dari 3 puluhan dan 5 satuan.</p>
+  <div id="build-options" class="grid"><button class="answer" data-build="35">35</button><button class="answer" data-build="53">53</button><button class="answer" data-build="30">30</button><button class="answer" data-build="25">25</button></div><div id="build-feedback" class="feedback hidden" aria-live="polite"></div>
+ </div><button class="btn" data-go="kuis">Lanjut ke Kuis →</button>
+</section>
+<section id="page-kuis" class="hidden">
+ <div class="panel"><span class="muted"><b>⭐ KUIS INTERAKTIF</b></span><h2>Ayo Uji Pengetahuanmu!</h2>
+  <div style="display:flex;justify-content:space-between"><span id="quiz-progress">Soal 1 dari 5</span><b id="quiz-score">Skor: 0</b></div><div class="progress"><div class="bar" id="quiz-bar"></div></div>
+  <div id="quiz-question" class="question"></div><div id="quiz-options"></div><div id="quiz-feedback" class="feedback hidden" aria-live="polite"></div>
+  <button id="quiz-next" class="btn hidden">Soal Berikutnya →</button><button id="quiz-restart" class="btn2 hidden">Ulangi Kuis</button>
+ </div>
+</section>
+<section id="page-evaluasi" class="hidden">
+ <div class="panel"><span class="muted"><b>📝 EVALUASI PEMBELAJARAN</b></span><h2>Kerjakan dengan Teliti!</h2><p>Jawablah lima soal berikut. Pilih satu jawaban yang benar.</p>
+  <div id="eval-container"></div><button id="eval-submit" class="btn">Selesai dan Lihat Nilai</button><div id="eval-result" class="panel hidden" aria-live="polite"></div><button id="eval-reset" class="btn2 hidden">Ulangi Evaluasi</button>
+ </div>
+ <div class="panel"><h3>📋 Kriteria Penilaian</h3><p>Nilai = (Jumlah jawaban benar ÷ 5) × 100.</p><p>KKTP: 70.</p><p>Siswa dinyatakan mencapai ketuntasan jika memperoleh nilai minimal 70.</p></div>
+</section>
+</main>
+<footer>🌈 Belajar Matematika • MI Kelas 1<br>Disusun oleh Hindri Handayani, S.Pd.</footer>
+</div>
+<script>
+(()=>{
+ const $=id=>document.getElementById(id);
+ function go(page){document.querySelectorAll('main section').forEach(s=>s.classList.toggle('hidden',s.id!=='page-'+page));document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.page===page));window.scrollTo({top:0,behavior:'smooth'});}
+ document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.page)));
+ document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+ const gameNumbers=[12,15,23,34,41,26,32,45,18,27];let gi=0,current=24;
+ function gameNew(){current=gameNumbers[gi++%gameNumbers.length];$('game-number').textContent=current;$('game-tens').value='';$('game-ones').value='';$('game-feedback').classList.add('hidden');}
+ $('check-game').addEventListener('click',()=>{let t=$('game-tens').value,o=$('game-ones').value,f=$('game-feedback');f.classList.remove('hidden');if(t===''||o===''){f.textContent='Pilih jumlah puluhan dan satuan terlebih dahulu.';return;}if(+t===Math.floor(current/10)&&+o===current%10)f.textContent='🎉 Hebat! Jawabanmu benar. '+current+' terdiri dari '+t+' puluhan dan '+o+' satuan.';else f.textContent='Belum tepat. Perhatikan angka pertama sebagai puluhan dan angka kedua sebagai satuan.';});
+ $('next-game').addEventListener('click',gameNew);
+ document.querySelectorAll('[data-build]').forEach(b=>b.addEventListener('click',()=>{let f=$('build-feedback');f.classList.remove('hidden');document.querySelectorAll('[data-build]').forEach(x=>x.classList.remove('correct','wrong'));if(b.dataset.build==='35'){b.classList.add('correct');f.textContent='🌟 Benar! 3 puluhan = 30 dan 5 satuan = 5. Jadi 35!';}else{b.classList.add('wrong');f.textContent='Ayo coba lagi! Puluhan berada di sebelah kiri.';}}));
+ const questions=[
+ {q:'Angka 2 pada bilangan 25 menempati nilai tempat apa?',o:['Puluhan','Satuan','Ratusan'],a:0,e:'Angka 2 berada di tempat puluhan, nilainya 20.'},
+ {q:'Bilangan 14 terdiri dari ...',o:['1 puluhan dan 4 satuan','4 puluhan dan 1 satuan','1 puluhan dan 5 satuan'],a:0,e:'14 = 10 + 4.'},
+ {q:'2 puluhan dan 3 satuan membentuk bilangan ...',o:['32','23','20'],a:1,e:'2 puluhan adalah 20, ditambah 3 menjadi 23.'},
+ {q:'Bilangan 35 memiliki berapa satuan?',o:['3','5','35'],a:1,e:'Angka paling kanan adalah 5 satuan.'},
+ {q:'10 satuan sama dengan ...',o:['1 puluhan','2 puluhan','10 puluhan'],a:0,e:'Sepuluh satuan dapat dikelompokkan menjadi satu puluhan.'}
+ ];
+ let qi=0,qscore=0,qanswered=false;
+ function quizRender(){let q=questions[qi];$('quiz-progress').textContent='Soal '+(qi+1)+' dari 5';$('quiz-score').textContent='Skor: '+qscore;$('quiz-bar').style.width=((qi+1)*20)+'%';$('quiz-question').textContent=q.q;$('quiz-options').innerHTML='';q.o.forEach((v,i)=>{let b=document.createElement('button');b.className='answer';b.textContent=v;b.addEventListener('click',()=>{if(qanswered)return;qanswered=true;let f=$('quiz-feedback');f.classList.remove('hidden');if(i===q.a){qscore+=20;b.classList.add('correct');f.textContent='🎉 Benar! '+q.e;}else{b.classList.add('wrong');$('quiz-options').children[q.a].classList.add('correct');f.textContent='Belum tepat. '+q.e;}$('quiz-score').textContent='Skor: '+qscore;$('quiz-next').classList.remove('hidden');$('quiz-next').textContent=qi===4?'Lihat Hasil':'Soal Berikutnya →';});$('quiz-options').appendChild(b);});$('quiz-feedback').classList.add('hidden');$('quiz-next').classList.add('hidden');$('quiz-restart').classList.add('hidden');qanswered=false;}
+ $('quiz-next').addEventListener('click',()=>{if(qi<4){qi++;quizRender();}else{$('quiz-question').textContent='🏆 Kuis selesai! Nilaimu '+qscore+' dari 100.';$('quiz-options').innerHTML='';$('quiz-feedback').classList.add('hidden');$('quiz-next').classList.add('hidden');$('quiz-restart').classList.remove('hidden');}});
+ $('quiz-restart').addEventListener('click',()=>{qi=0;qscore=0;quizRender();});
+ const evals=[
+ {q:'Bilangan 42 terdiri dari ...',o:['4 puluhan dan 2 satuan','2 puluhan dan 4 satuan','4 puluhan dan 4 satuan'],a:0},
+ {q:'Nilai angka 3 pada bilangan 35 adalah ...',o:['3','30','5'],a:1},
+ {q:'1 puluhan dan 6 satuan membentuk bilangan ...',o:['61','10','16'],a:2},
+ {q:'Bilangan 28 mempunyai ... satuan.',o:['2','8','20'],a:1},
+ {q:'3 puluhan sama dengan ...',o:['3','13','30'],a:2}
+ ];
+ function evalRender(){let c=$('eval-container');c.innerHTML='';evals.forEach((q,i)=>{let box=document.createElement('div');box.className='evalq';let h=document.createElement('p');h.innerHTML='<b>'+(i+1)+'. '+q.q+'</b>';box.appendChild(h);q.o.forEach((v,j)=>{let l=document.createElement('label'),r=document.createElement('input');r.type='radio';r.name='eval'+i;r.value=j;l.append(r,document.createTextNode(' '+v));box.appendChild(l);});c.appendChild(box);});}
+ $('eval-submit').addEventListener('click',()=>{let score=0,answered=0;evals.forEach((q,i)=>{let selected=document.querySelector('input[name="eval'+i+'"]:checked');if(selected){answered++;if(+selected.value===q.a)score++;}});let result=$('eval-result');result.classList.remove('hidden');if(answered<5){result.textContent='Kamu baru menjawab '+answered+' dari 5 soal. Lengkapi semua jawaban terlebih dahulu.';return;}let n=score*20;result.innerHTML='<div class="center"><div style="font-size:38px">🏆</div><div class="big">Nilai: '+n+'</div><p><b>'+(n>=70?'Hebat! Kamu mencapai ketuntasan belajar. 🎉':'Tetap semangat! Ayo pelajari kembali materi puluhan dan satuan.')+'</b></p><p>Jawaban benar: '+score+' dari 5 soal.</p><p>KKTP: 70</p></div>';$('eval-submit').classList.add('hidden');$('eval-reset').classList.remove('hidden');});
+ $('eval-reset').addEventListener('click',()=>{evalRender();$('eval-result').classList.add('hidden');$('eval-submit').classList.remove('hidden');$('eval-reset').classList.add('hidden');});
+ evalRender();quizRender();gameNew();
+})();
+</script>
+</body>
+</html>
